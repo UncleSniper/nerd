@@ -35,7 +35,9 @@ $(SO): $(OBJ)
 	echo '[base]      link    $(SO)'
 	$(LD) $(LDFLAGS) $(OBJ) -o$(SO)
 
-bin/%.o: src/%.cpp timestamp
+bin/%.o: src/%.cpp
 	echo '[base]      compile $(subst src/,,$<)'
 	$(MKDIR) $(dir $@)
 	$(CXX) -c $(CXXFLAGS) $< -o$@
+
+bin/modinfo.o: timestamp
