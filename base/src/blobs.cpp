@@ -1,3 +1,5 @@
+// This file semi-shamelessly semi-ripped-off from RedEngine RedStrain
+
 #include <new>
 
 #include "die.hpp"

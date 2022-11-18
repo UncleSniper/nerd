@@ -1,9 +1,9 @@
 #include <cstdio>
 
+// This file semi-shamelessly semi-ripped-off from RedEngine RedStrain
+
 #include "die.hpp"
 #include "LibraryDependency.hpp"
-
-// This file semi-shamelessly semi-ripped-off from RedEngine RedStrain
 
 namespace nerd {
 namespace base {
