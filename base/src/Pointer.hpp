@@ -28,7 +28,7 @@ namespace base {
 			return object;
 		}
 
-		SubjectT* set(SubjectT* newObject = NULL) {
+		SubjectT* set(SubjectT* newObject = nullptr) {
 			SubjectT* oldObject = object;
 			object = newObject;
 			return oldObject;

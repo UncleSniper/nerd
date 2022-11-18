@@ -12,7 +12,7 @@ namespace base {
 	class DeleteArray : public Pointer<SubjectT> {
 
 	  public:
-		DeleteArray(SubjectT* array = NULL) : Pointer<SubjectT>(array) {}
+		DeleteArray(SubjectT* array = nullptr) : Pointer<SubjectT>(array) {}
 
 		DeleteArray(const DeleteArray& pointer) : Pointer<SubjectT>(pointer) {}
 

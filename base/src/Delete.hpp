@@ -12,7 +12,7 @@ namespace base {
 	class Delete : public Pointer<SubjectT> {
 
 	  public:
-		Delete(SubjectT* object = NULL) : Pointer<SubjectT>(object) {}
+		Delete(SubjectT* object = nullptr) : Pointer<SubjectT>(object) {}
 
 		Delete(const Delete& pointer) : Pointer<SubjectT>(pointer) {}
 
