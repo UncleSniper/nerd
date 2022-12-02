@@ -12,7 +12,7 @@ OBJ=$(subst src/,bin/,$(SRC:.cpp=.o))
 TS_HDR=src/build_timestamp.hpp
 
 WARN_FLAGS=-Wall -Wextra -pedantic
-CXXFLAGS=-fPIC -DPIC -g $(WARN_FLAGS)
+CXXFLAGS=-std=c++17 -fPIC -DPIC -g $(WARN_FLAGS)
 LDFLAGS=-shared -Wl,-soname,$(SO) -g
 
 .SILENT:
