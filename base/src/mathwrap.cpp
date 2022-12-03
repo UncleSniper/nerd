@@ -1,9 +1,11 @@
 // This file shamelessly ripped off from RedEngine RedStrain
 
 #define _ISOC99_SOURCE
-#include <math.h>
+#include <cmath>
 
 #include "mathwrap.hpp"
+
+using std::fpclassify;
 
 namespace nerd {
 namespace base {
