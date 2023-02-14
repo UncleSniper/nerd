@@ -1,7 +1,7 @@
 #ifndef NERD_BASE_INTEGERTYPEBYTRAITS_HPP
 #define NERD_BASE_INTEGERTYPEBYTRAITS_HPP
 
-// This file shamelessly ripped off from RedEngine RedStrain
+// This file semi-shamelessly semi-ripped-off from RedEngine RedStrain
 
 #include <cstddef>
 #include <cstdint>
@@ -37,6 +37,7 @@ namespace base {
 	};
 
 	typedef IntegerTypeByTraits<sizeof(void*), false>::StandardType IntegerPointer;
+	typedef IntegerTypeByTraits<sizeof(void*), true>::StandardType PointerOffset;
 
 	typedef IntegerTypeByTraits<sizeof(float), false>::StandardType FloatBits;
 	typedef IntegerTypeByTraits<sizeof(double), false>::StandardType DoubleBits;
